@@ -22,6 +22,15 @@ void data::set_label(uint8_t val){
 void data::set_enumerated_label(int val){
     enum_label = val;
 }
+void data::set_distance(double val)
+{
+    distance = val;
+}
+
+double data::get_distance()
+{
+    return distance;
+}
 
 int data::get_feature_vector_size(){
     return feature_vector -> size();

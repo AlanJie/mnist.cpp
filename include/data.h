@@ -10,6 +10,7 @@ class data
     std::vector<uint8_t> * feature_vector;  // 数据
     uint8_t label;  // 标签
     int enum_label;  // 标签对应的 int
+    double distance;
 
 public:
     data();
@@ -19,7 +20,9 @@ public:
     void append_to_feature_vector(uint8_t);
     void set_label(uint8_t);
     void set_enumerated_label(int);
+    void set_distance(double);
 
+    double get_distance();
     int get_feature_vector_size();
     uint8_t get_label();
     uint8_t get_enumerated_label();
